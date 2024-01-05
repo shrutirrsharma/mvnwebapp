@@ -7,7 +7,8 @@ trigger:
 - master
 
 pool:
-  vmImage: ubuntu-latest
+  name: Default 
+  demands: Default -equals LAPTOP-T65HKP0H
 
 steps:
 - task: Maven@3

@@ -9,6 +9,8 @@ trigger:
 pool:
   name: Default 
   demands: Default -equals LAPTOP-T65HKP0H
+           maven
+           Agent.Version -gtVersion 3.232.1
 
 steps:
 - task: Maven@3
